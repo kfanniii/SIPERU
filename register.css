@@ -1,0 +1,241 @@
+
+/* =====================================
+   SIPERU - REGISTER PAGE
+   Tema Navy & White
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.register-page {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #102542,
+        #24466f
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 20px;
+}
+
+/* REGISTER CARD */
+
+.register-card {
+    width: 100%;
+    max-width: 460px;
+
+    padding: 38px 36px;
+
+    background: #ffffff;
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER */
+
+.register-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.brand {
+    color: #183153;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #183153;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 46px;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #183153;
+
+    font-size: 14px;
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #98a2b3;
+}
+
+.form-group input:focus {
+    border-color: #24466f;
+
+    box-shadow:
+        0 0 0 3px rgba(36, 70, 111, 0.12);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 7px;
+
+    color: #667085;
+    font-size: 12px;
+}
+
+/* REGISTER BUTTON */
+
+.register-btn {
+    display: block;
+    width: 100%;
+
+    padding: 14px;
+    margin-top: 8px;
+
+    background: #183153;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.register-btn:hover {
+    background: #284b78;
+}
+
+/* LOGIN LINK */
+
+.login-text {
+    margin-top: 24px;
+
+    text-align: center;
+    color: #667085;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #183153;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* ALERT */
+
+.alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 12px 14px;
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.alert-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.alert-error {
+    background: #fee4e2;
+    color: #b42318;
+    border: 1px solid #fecdca;
+}
+
+.alert-error .alert-icon {
+    background: #b42318;
+}
+
+.alert-success {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+.alert-success .alert-icon {
+    background: #16a34a;
+}
+
+.alert-success a {
+    color: #166534;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    body.register-page {
+        padding: 20px 14px;
+    }
+
+    .register-card {
+        padding: 30px 24px;
+        border-radius: 14px;
+    }
+
+    .brand {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,153 @@
+
+/* LOGIN SIPERU */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.login-page {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #102542, #24466f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* KARTU LOGIN */
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 42px 36px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+    color: #183153;
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #667085;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* PESAN ERROR */
+
+.login-error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fee4e2;
+    color: #b42318;
+    border: 1px solid #fecdca;
+    border-radius: 9px;
+    padding: 12px 14px;
+    margin-bottom: 22px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.error-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    background: #b42318;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #183153;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 46px;
+    padding: 12px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 9px;
+    background: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #24466f;
+    box-shadow: 0 0 0 3px rgba(36, 70, 111, 0.12);
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    background: #183153;
+    color: #ffffff;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #284b78;
+}
+
+/* LINK REGISTER */
+
+.register-text {
+    margin-top: 24px;
+    text-align: center;
+    color: #667085;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #183153;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 24px;
+    }
+
+    .brand {
+        font-size: 30px;
+    }
+}
